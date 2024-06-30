@@ -1,0 +1,29 @@
+.nav_contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0 24px;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.12px;
+  text-align: left;
+  color: #454545;
+  ul {
+    gap: 27px;
+    li {
+      opacity: 0.5;
+    }
+  }
+  .booking_call {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    p {
+      opacity: 1;
+    }
+    span {
+      opacity: 0.5;
+    }
+  }
+}
