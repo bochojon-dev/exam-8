@@ -10,8 +10,6 @@ import {
 } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

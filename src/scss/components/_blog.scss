@@ -1,5 +1,6 @@
-.company {
-  .company_title {
+.blog {
+  padding-bottom: 90px;
+  .blog_title {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,61 +40,54 @@
       }
     }
   }
-  .company_cards {
+  .blog_cards {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 20px;
-    padding-bottom: 60px;
-    .company_card {
-      height: 340px;
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      padding: 40px;
-      border: 1px solid #d9d9d9;
+    padding: 48px 0 96px;
+    .blog_card {
+      padding-bottom: 32px;
+      border-bottom: 1px solid #0001;
       color: #454545;
-      transition: 0.2s linear;
-      &:hover {
-        background: #ccccc9;
-      }
-      img {
-        padding: 10px;
-        background: #454545;
-        border-radius: 10px;
-      }
-      h3 {
-        padding: 60px 0 20px;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 26px;
-      }
-      p {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
+      .blog_card_title {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding-top: 30px;
+        h3 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 26px;
+          padding: 0 70px 24px 0;
+        }
       }
     }
   }
-}
-@media (max-width: 1150px) {
-  .company_cards {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-    gap: 32px;
+  .blog_texts {
+    display: flex;
+    grid-template-columns: 3fr 1fr;
+    gap: 40%;
+    .blog_desc {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
   }
 }
+
 @media (max-width: 800px) {
-  .company {
+  .blog {
+    padding-bottom: 48px !important;
     position: relative;
-    .company_title {
+    .blog_title {
       button {
         position: absolute;
         bottom: -40px;
         right: 40px;
       }
+    }
+    .blog_texts {
+      grid-template-columns: 1;
     }
   }
 }

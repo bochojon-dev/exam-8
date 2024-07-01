@@ -12,7 +12,7 @@
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 1300px;
+  max-width: 1340px;
 }
 ul {
   list-style-type: none;
@@ -43,3 +43,6 @@ button {
 @import "./components/hero.scss";
 @import "./components/katalog.scss";
 @import "./components/company.scss";
+@import "./components/brand.scss";
+@import "./components/blog.scss";
+@import "./components/footer.scss";

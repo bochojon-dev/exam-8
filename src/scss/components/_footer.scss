@@ -1,0 +1,40 @@
+.footer {
+  padding: 80px 0;
+  background: #f2f2f2;
+  .footer_contents {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 60px;
+    color: #454545;
+    ul {
+      flex-direction: column;
+      align-items: start;
+      p {
+        padding-bottom: 27px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.86px;
+        opacity: 0.5;
+      }
+      h4 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32.78px;
+        padding-bottom: 32px;
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32.78px;
+        padding: 50px 0 32px;
+      }
+      .visa {
+        padding-bottom: 32px;
+      }
+      .vk {
+        padding-top: 32px;
+      }
+    }
+  }
+}
