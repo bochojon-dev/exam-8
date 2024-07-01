@@ -5,6 +5,7 @@ import Company from "../../components/company/Company";
 import Brand from "../../components/brand/Brand";
 import BlogSection from "../../components/blog-section/BlogSection";
 import Footer from "../../components/footer/Footer";
+import Products from "../../components/products/Products";
 // import Products from "../../components/products/Products";
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
       <Hero />
       <Katalog />
       <Company />
-      {/* <Products /> */}
+      <Products />
       <Brand />
       <BlogSection />
     </>

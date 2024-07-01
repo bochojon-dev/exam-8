@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/nav-logo.svg";
 import katalog from "../../assets/katalog.svg";
 import katalog2 from "../../assets/katalog-hover.svg";
@@ -7,16 +7,34 @@ import heart from "../../assets/heart.svg";
 import compare from "../../assets/compare.svg";
 import { BsCart3 } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { IoMenu } from "react-icons/io5";
 
 const HeaderBottom = () => {
+  const [toggle, setToggle] = useState(false);
+  const [shrink, setShrink] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 50) {
+        setShrink(true);
+      } else {
+        setShrink(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="header">
+    <div className={`header ${shrink ? "shrink" : ""}`}>
       <div className="container">
         <div className="header_bottom">
           <Link to="/">
             <img src={logo} alt="logo" />
           </Link>
-          <button>
+          <button className="catalog_button">
             <img src={katalog} alt="category" />
             <img className="katalog_hover" src={katalog2} alt="category" />
             Каталог
@@ -41,6 +59,9 @@ const HeaderBottom = () => {
               <p>Корзина</p>
             </div>
           </div>
+          <button className="menu" onClick={() => setToggle(!toggle)}>
+            <IoMenu />
+          </button>
         </div>
       </div>
     </div>

@@ -3,11 +3,15 @@
   width: 90%;
   border-radius: 50px;
   margin: 44px auto 90px;
+  cursor: grab;
   .hero_contents {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 50px;
+    .menu {
+      display: none;
+    }
     h3 {
       padding-left: 16px;
       font-size: 64px;

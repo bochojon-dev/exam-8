@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/nav-logo.svg";
 import visa from "../../assets/visa.svg";
 import vk from "../../assets/vk.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,13 +11,21 @@ const Footer = () => {
         <div className="footer_contents">
           <ul>
             <li>
-              <img src={logo} alt="logo" />
+              <Link to={"/"}>
+                <img src={logo} alt="logo" />
+              </Link>
             </li>
             <li>
               <h3>8 (800) 890-46-56</h3>
             </li>
             <li>
-              <img className="visa" src={visa} alt="visa card" />
+              <Link
+                to={
+                  "https://www.visa.co.in/pay-with-visa/click-to-pay-with-visa.html"
+                }
+              >
+                <img className="visa" src={visa} alt="visa card" />
+              </Link>
             </li>
             <li>
               <p>Политика конфидециальности</p>
@@ -80,7 +89,7 @@ const Footer = () => {
           </ul>
           <ul>
             <li>
-              <h4>Покупателям</h4>
+              <h4> </h4>
             </li>
             <li>
               <p>Споты</p>
