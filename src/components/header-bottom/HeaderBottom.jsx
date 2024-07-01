@@ -28,16 +28,17 @@ const HeaderBottom = () => {
           <div className="header_icons">
             <div className="header_icon">
               <img src={heart} alt="wishlist" />
+              <span>1</span>
               <p>Избранное</p>
             </div>
             <div className="header_icon">
               <img src={compare} alt="compare" />
-              <p>Избранное</p>
+              <p>Сравнение</p>
             </div>
             <div className="header_icon third">
               <BsCart3 className="cart-image" />
               <span>1</span>
-              <p>Избранное</p>
+              <p>Корзина</p>
             </div>
           </div>
         </div>

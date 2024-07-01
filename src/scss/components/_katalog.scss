@@ -1,0 +1,105 @@
+.katalog {
+  padding: 90px 0 50px;
+  .katalog_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 54.64px;
+      color: #454545;
+    }
+    button {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21.86px;
+      color: #454545;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 14px 44px;
+      border-radius: 100px;
+      border: 1px solid #454545;
+      background: #fff;
+      transition: 0.2s linear;
+      .white_arrow {
+        display: none;
+      }
+      &:hover {
+        background: #454545;
+        color: #fff;
+        .white_arrow {
+          display: flex !important;
+        }
+        .black_arrow {
+          display: none;
+        }
+      }
+    }
+  }
+  .katalog_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    .katalog_card {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      background: #f2f2f2;
+      border-radius: 20px;
+      padding: 32px;
+      &:nth-child(3) {
+        .third-image {
+          width: 250px;
+        }
+      }
+      .katalog_texts {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        color: #454545;
+        justify-content: space-between;
+        p {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 22px;
+        }
+        h4 {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 15px;
+          display: flex;
+          align-content: center;
+          gap: 6px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .katalog_cards {
+    grid-template-columns: 1fr 1fr !important;
+    justify-content: center;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 800px) {
+  .katalog_cards {
+    grid-template-columns: 1fr !important;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .katalog {
+    position: relative;
+    .katalog_title {
+      button {
+        position: absolute;
+        bottom: -40px;
+        right: 40px;
+      }
+    }
+  }
+}

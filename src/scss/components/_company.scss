@@ -1,0 +1,95 @@
+.company {
+  .company_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    padding-top: 60px;
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 54.64px;
+      color: #454545;
+    }
+    button {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21.86px;
+      color: #454545;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 14px 44px;
+      border-radius: 100px;
+      border: 1px solid #454545;
+      background: #fff;
+      transition: 0.2s linear;
+      .white_arrow {
+        display: none;
+      }
+      &:hover {
+        background: #454545;
+        color: #fff;
+        .white_arrow {
+          display: flex !important;
+        }
+        .black_arrow {
+          display: none;
+        }
+      }
+    }
+  }
+  .company_cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 60px;
+    .company_card {
+      height: 340px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding: 40px;
+      border: 1px solid #d9d9d9;
+      color: #454545;
+      img {
+        padding: 10px;
+        background: #454545;
+        border-radius: 10px;
+      }
+      h3 {
+        padding: 60px 0 20px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 26px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 1150px) {
+  .company_cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 32px;
+  }
+}
+@media (max-width: 800px) {
+  .company {
+    position: relative;
+    .company_title {
+      button {
+        position: absolute;
+        bottom: -40px;
+        right: 40px;
+      }
+    }
+  }
+}

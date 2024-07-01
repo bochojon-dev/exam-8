@@ -28,7 +28,18 @@ a {
 }
 button {
   cursor: pointer;
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
 }
 
 @import "./components/_headerTop.scss";
 @import "./components/_headerBottom.scss";
+@import "./components/hero.scss";
+@import "./components/katalog.scss";
+@import "./components/company.scss";
