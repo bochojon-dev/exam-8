@@ -25,6 +25,15 @@ const Brand = () => {
         <Link to={"https://artelamp.ru/"}>
           <img src={brand1} alt="our brands" />
         </Link>
+        <Link to={"https://artelamp.ru/"}>
+          <img src={brand1} alt="our brands" />
+        </Link>
+        <Link to={"https://artelamp.ru/"}>
+          <img src={brand1} alt="our brands" />
+        </Link>
+        <Link to={"https://artelamp.ru/"}>
+          <img src={brand1} alt="our brands" />
+        </Link>
       </div>
     </div>
   );

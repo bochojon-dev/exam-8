@@ -3,6 +3,9 @@ import {
   useGetProductByIdQuery,
   useGetProductsQuery,
 } from "../../context/api/productApi";
+
+import rightArrowBlack from "../../assets/right-arrow-black.svg";
+import rightArrowWhite from "../../assets/right-arrow-white.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoCartOutline, IoHeartOutline } from "react-icons/io5";
 import { Link, useSearchParams } from "react-router-dom";
@@ -54,9 +57,21 @@ const Products = ({ sliceCount = 8 }) => {
         <div className="container">
           <div className="products_title">
             <h2>Популярные товары</h2>
-            <button>
-              Все товары <FaArrowRightLong />
-            </button>
+            <Link to={"/all-products"}>
+              <button>
+                Все товары{" "}
+                <img
+                  className="black_arrow"
+                  src={rightArrowBlack}
+                  alt="right-arrow"
+                />
+                <img
+                  className="white_arrow"
+                  src={rightArrowWhite}
+                  alt="right-arrow"
+                />
+              </button>
+            </Link>
           </div>
           <div className="product_cards">{products}</div>
           <div className="product_btn">

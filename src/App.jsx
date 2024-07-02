@@ -5,6 +5,8 @@ import HeaderTop from "./components/header-top/HeaderTop";
 import HeaderBottom from "./components/header-bottom/HeaderBottom";
 import CompanyPage from "./pages/company/CompanyPage";
 import Footer from "./components/footer/Footer";
+import AllProducts from "./pages/all-products/AllProducts";
+import Payment from "./pages/payment/Payment";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <HeaderBottom />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<CompanyPage />} />
+        <Route path="company" element={<CompanyPage />} />
+        <Route path="/all-products" element={<AllProducts />} />
+        <Route path="/payment" element={<Payment />} />
       </Routes>
       <Footer />
     </>

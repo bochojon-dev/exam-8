@@ -23,8 +23,11 @@ const Hero = () => {
           modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
           spaceBetween={50}
           slidesPerView={1}
-          navigation
-          autoplay={2000}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          navigation={true}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
         >
