@@ -1,5 +1,6 @@
 import React from "react";
 import Map from "../../components/map/Map";
+import { Link } from "react-router-dom";
 
 const Payment = () => {
   return (
@@ -7,7 +8,7 @@ const Payment = () => {
       <div className="container">
         <div className="payment__title">
           <h5>
-            Главная <span>{">"}</span>
+            <Link to={"/"}>Главная</Link> <span>{">"}</span>
           </h5>
           <h5 className="payment_page_title">О компании</h5>
         </div>

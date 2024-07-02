@@ -5,26 +5,35 @@ import company3 from "../../assets/company3.svg";
 import company4 from "../../assets/company4.svg";
 import rightArrowBlack from "../../assets/right-arrow-black.svg";
 import rightArrowWhite from "../../assets/right-arrow-white.svg";
+import { Link, useLocation } from "react-router-dom";
 
 const Company = () => {
+  const { pathname } = useLocation();
   return (
     <div className="company">
       <div className="container">
         <div className="company_title">
           <h2>Почему NORNLIGHT?</h2>
-          <button>
-            О компании
-            <img
-              className="black_arrow"
-              src={rightArrowBlack}
-              alt="right-arrow"
-            />
-            <img
-              className="white_arrow"
-              src={rightArrowWhite}
-              alt="right-arrow"
-            />
-          </button>
+          <Link
+            style={{
+              display: `${pathname === "/blog" ? "none" : "flex"}`,
+            }}
+            to={"/company"}
+          >
+            <button>
+              О компании
+              <img
+                className="black_arrow"
+                src={rightArrowBlack}
+                alt="right-arrow"
+              />
+              <img
+                className="white_arrow"
+                src={rightArrowWhite}
+                alt="right-arrow"
+              />
+            </button>
+          </Link>
         </div>
         <div className="company_cards">
           <div className="company_card">

@@ -27,5 +27,62 @@
     padding-top: 32px;
     display: flex;
     gap: 30%;
+    color: #454545;
+    h2 {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 70.4px;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 33.6px;
+      padding-bottom: 28px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      padding-bottom: 24px;
+    }
+    .payment_bside {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      align-items: start;
+      ul {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        flex-direction: column;
+        list-style-type: disc;
+        color: #2f4da3 !important;
+        align-items: start;
+        padding-left: 16px;
+      }
+    }
+  }
+}
+.contact_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  margin-top: -240px;
+  padding: 60px;
+  border-radius: 15px;
+  background-color: red;
+  z-index: 1170;
+  color: #454545;
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32.78px;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.86px;
   }
 }

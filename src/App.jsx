@@ -7,6 +7,10 @@ import CompanyPage from "./pages/company/CompanyPage";
 import Footer from "./components/footer/Footer";
 import AllProducts from "./pages/all-products/AllProducts";
 import Payment from "./pages/payment/Payment";
+import Return from "./pages/return/Return";
+import BlogPage from "./pages/blog-page/BlogPage";
+import NotFound from "./pages/not-found/NotFound";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
         <Route path="company" element={<CompanyPage />} />
         <Route path="/all-products" element={<AllProducts />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/return" element={<Return />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>

@@ -13,10 +13,16 @@ const HeaderTop = () => {
             <Link to={"/payment"}>
               <li>Доставка и оплата</li>
             </Link>
-            <li>Возврат</li>
+            <Link to={"/return"}>
+              <li>Возврат</li>
+            </Link>
             <li>Гарантии</li>
-            <li>Контакты</li>
-            <li>Блог</li>
+            <Link to={"/contact"}>
+              <li>Контакты</li>
+            </Link>
+            <Link to={"/blog"}>
+              <li>Блог</li>
+            </Link>
           </ul>
           <div className="booking_call">
             <p>8 (800) 890-46-56</p>

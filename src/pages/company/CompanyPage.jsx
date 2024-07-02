@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import Brand from "../../components/brand/Brand";
 import BlogSection from "../../components/blog-section/BlogSection";
+import { Link } from "react-router-dom";
 
 const CompanyPage = () => {
   return (
     <div className="container">
       <div className="company__title">
         <h5>
-          Главная <span>{">"}</span>
+          <Link to={"/"}>Главная</Link> <span>{">"}</span>
         </h5>
         <h5 className="company_page_title">О компании</h5>
       </div>
