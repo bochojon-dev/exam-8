@@ -1,105 +1,104 @@
-.katalog {
-  padding: 90px 0 50px;
-  .katalog_title {
+.d1 {
+  max-width: 326px;
+  padding: 15px;
+  .d3 {
+    font-size: 24px;
+    position: absolute;
+    margin-left: -25px;
+    cursor: pointer;
+  }
+  h1 {
+    color: rgb(69, 69, 69);
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+  .d2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 40px;
-    h2 {
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 54.64px;
-      color: #454545;
-    }
-    button {
-      font-size: 16px;
+    margin-top: 24px;
+    del {
+      color: rgb(159, 159, 159);
+      font-family: Manrope;
+      font-size: 12px;
       font-weight: 500;
-      line-height: 21.86px;
-      color: #454545;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      padding: 14px 44px;
-      border-radius: 100px;
-      border: 1px solid #454545;
-      background: #fff;
-      transition: 0.2s linear;
-      .white_arrow {
-        display: none;
-      }
-      &:hover {
-        background: #454545;
-        color: #fff;
-        .white_arrow {
-          display: flex !important;
-        }
-        .black_arrow {
-          display: none;
-        }
-      }
+      line-height: 110%;
+      letter-spacing: 0%;
+      text-align: left;
     }
-  }
-  .katalog_cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    .katalog_card {
-      display: flex;
-      align-items: start;
-      justify-content: space-between;
-      background: #f2f2f2;
-      border-radius: 20px;
-      padding: 32px;
-      &:nth-child(3) {
-        .third-image {
-          width: 250px;
-        }
-      }
-      .katalog_texts {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        color: #454545;
-        justify-content: space-between;
-        p {
-          font-size: 20px;
-          font-weight: 500;
-          line-height: 22px;
-        }
-        h4 {
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 15px;
-          display: flex;
-          align-content: center;
-          gap: 6px;
-        }
-      }
+    p {
+      color: rgb(69, 69, 69);
+      font-family: Manrope;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 110%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    svg {
+      font-size: 44px;
+      padding: 0px 15px;
+      border-radius: 15px;
+      background: rgb(69, 69, 69);
+      color: #fff;
+      cursor: pointer;
     }
   }
 }
-
-@media (max-width: 1190px) {
-  .katalog_cards {
-    grid-template-columns: 1fr 1fr !important;
-    justify-content: center;
-    padding: 0 20px;
+.d {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 82px;
+}
+/* loading */
+.sk1 {
+  width: 306px;
+  height: 246px;
+  background: rgb(215, 214, 214);
+  border-radius: 8px;
+}
+.sk2 {
+  width: 306px;
+  height: 20px;
+  background: rgb(215, 214, 214);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.sk3 {
+  width: 250px;
+  height: 30px;
+  background: rgb(215, 214, 214);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.loading {
+  animation: skeleton-loading 1s linear infinite alternate;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@keyframes skeleton-loading {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
   }
 }
-@media (max-width: 800px) {
-  .katalog_cards {
-    grid-template-columns: 1fr !important;
-    justify-content: center;
-    padding: 0 20px;
-  }
-  .katalog {
-    position: relative;
-    .katalog_title {
-      button {
-        position: absolute;
-        bottom: -40px;
-        right: 40px;
-      }
-    }
-  }
+.hide {
+  display: none;
 }

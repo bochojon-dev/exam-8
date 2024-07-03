@@ -16,7 +16,9 @@ const HeaderTop = () => {
             <Link to={"/return"}>
               <li>Возврат</li>
             </Link>
-            <li>Гарантии</li>
+            <Link to={"/guarantee"}>
+              <li>Гарантии</li>
+            </Link>
             <Link to={"/contact"}>
               <li>Контакты</li>
             </Link>

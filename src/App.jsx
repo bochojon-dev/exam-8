@@ -11,6 +11,10 @@ import Return from "./pages/return/Return";
 import BlogPage from "./pages/blog-page/BlogPage";
 import NotFound from "./pages/not-found/NotFound";
 import Contact from "./pages/contact/Contact";
+import Guarantee from "./pages/guarantee/Guarantee";
+import Cart from "./pages/cart/Cart";
+import Wishes from "./pages/Wishes";
+import Login from "./pages/login/Login";
 
 function App() {
   return (
@@ -24,7 +28,11 @@ function App() {
         <Route path="/payment" element={<Payment />} />
         <Route path="/return" element={<Return />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/guarantee" element={<Guarantee />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/wishes" element={<Wishes />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
