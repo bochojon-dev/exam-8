@@ -10,13 +10,11 @@ import { Link, useLocation } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 
 const HeaderBottom = () => {
+  let { pathname } = useLocation();
 
-  let {pathname} = useLocation()
-
-  if(pathname.includes('login') || pathname.includes('admin')){
-      return <></>
+  if (pathname.includes("login") || pathname.includes("admin")) {
+    return <></>;
   }
-
 
   const [toggle, setToggle] = useState(false);
   const [shrink, setShrink] = useState(false);
@@ -52,20 +50,27 @@ const HeaderBottom = () => {
             <img src={search} alt="search" />
           </form>
           <div className="header_icons">
-            <div className="header_icon">
-              <img src={heart} alt="wishlist" />
-              <span>1</span>
-              <p>Избранное</p>
-            </div>
-            <div className="header_icon">
-              <img src={compare} alt="compare" />
-              <p>Сравнение</p>
-            </div>
-            <div className="header_icon third">
-              <BsCart3 className="cart-image" />
-              <span>1</span>
-              <p>Корзина</p>
-            </div>
+            <Link to={"/wishes"}>
+              <div className="header_icon">
+                <img src={heart} alt="wishlist" />
+                <span>1</span>
+                <p>Избранное</p>
+              </div>
+            </Link>
+            <Link to={"*"}>
+              <div className="header_icon">
+                <img src={compare} alt="compare" />
+                <p>Сравнение</p>
+              </div>
+            </Link>
+            <Link to={"/cart"}>
+              {" "}
+              <div className="header_icon third">
+                <BsCart3 className="cart-image" />
+                <span>1</span>
+                <p>Корзина</p>
+              </div>
+            </Link>
           </div>
           <button className="menu" onClick={() => setToggle(!toggle)}>
             <IoMenu />

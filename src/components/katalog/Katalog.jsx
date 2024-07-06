@@ -16,7 +16,7 @@ const Katalog = () => {
         <div className="katalog_title">
           <h2>Каталог</h2>
           <button>
-            Весь каталог{" "}
+            Весь каталог
             <img
               className="black_arrow"
               src={rightArrowBlack}
