@@ -6,10 +6,18 @@ import search from "../../assets/search.svg";
 import heart from "../../assets/heart.svg";
 import compare from "../../assets/compare.svg";
 import { BsCart3 } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 
 const HeaderBottom = () => {
+
+  let {pathname} = useLocation()
+
+  if(pathname.includes('login') || pathname.includes('admin')){
+      return <></>
+  }
+
+
   const [toggle, setToggle] = useState(false);
   const [shrink, setShrink] = useState(false);
   useEffect(() => {

@@ -2,9 +2,17 @@ import React from "react";
 import logo from "../../assets/nav-logo.svg";
 import visa from "../../assets/visa.svg";
 import vk from "../../assets/vk.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  
+  // let {pathname} = useLocation()
+
+
+  // if(pathname.includes('login') || pathname.includes('admin')){
+  //     return <></>
+  // }
+
   return (
     <div className="footer">
       <div className="container">
